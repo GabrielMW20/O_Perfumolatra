@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/CSS/estilos.css">
+    <link rel="stylesheet" href="./src/CSS/responsividade.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+        defer></script>
+
+    <title>O Perfumólatra | Bem-Vindo</title>
+</head>
+
+<body style="background-color: #303030; min-width: 350px; max-width: 576px;">
+
+    <header>
+        <nav class="menu-navegacao">
+            <div class="container text-center">
+                <a href="./index.html" class="text-white"><img src="./images/logo-perfumolatra.png" alt="perfumolatra"
+                        class="mt-2"></a>
+            </div>
+        </nav>
+        <div class="btn_nav text-center" data-bs-target="#painel">
+            <a href="#painel" data-bs-toggle="offcanvas">
+                <i class="bi bi-list"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <form class="justify-content-center form_buscar">
+                <div class="input-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="Digite aqui o que procura">
+                    <button class="btn btn-secondary"><i class="bi bi-search"></i></button>
+                </div>
+            </form>
+
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="painel">
+                <div class="offcanvas-header">
+                    <div class="row">
+                        <div class="col-2">
+                            <a href="./perfil.html"><i class="bi bi-person-circle text-white"></i></a>
+                        </div>
+                        <div class="col-10 area-login mt-2">
+                            <span class="titulo-login ms-2">Olá,</span><br>
+                            <span class="descricao-login ms-2"><a href="./login.html">Faça login ou
+                                    cadastre-se</a></span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <hr class="hr-canvas">
+                <div class="carrinho text-center">
+                    <a href="./carrinho.html"><i class="bi bi-cart3 text-white"></i></a>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row">
+                        <button class="dropdown-toggle mb-3 text-start" type="button" data-bs-toggle="dropdown"
+                            id="btnTipos"><span class="ms-2">Nacionais Masculinos</span></button>
+                        <ul class="dropdown-menu">
+                            <li class="my-2">
+                                <a href="./produto01.html" class="dropdown-item">Loewe Solo Origami</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="./produto02.html" class="dropdown-item">Mercedes-Benz - Select</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="./produto03.html" class="dropdown-item">Guerlain Homme - Vintage</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="./produto04.html" class="dropdown-item">Parfums de Marly - Haltane</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="./produto05.html" class="dropdown-item">Maison Margiela - Replica</a>
+                            </li>
+                        </ul>
+                        <button class="dropdown-toggle mb-3 text-start" type="button" data-bs-toggle="dropdown"
+                            id="btnTipos"><span class="ms-2">Nacionais Femininos</span></button>
+                        <ul class="dropdown-menu">
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Loewe Solo Origami</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Mercedes-Benz - Select</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Guerlain Homme - Vintage</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Parfums de Marly - Haltane</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Maison Margiela - Replica</a>
+                            </li>
+                        </ul>
+                        <button class="dropdown-toggle mb-3 text-start" type="button" data-bs-toggle="dropdown"
+                            id="btnTipos"><span class="ms-2">Importados Masculinos</span></button>
+                        <ul class="dropdown-menu">
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Loewe Solo Origami</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Mercedes-Benz - Select</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Guerlain Homme - Vintage</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Parfums de Marly - Haltane</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Maison Margiela - Replica</a>
+                            </li>
+                        </ul>
+                        <button class="dropdown-toggle mb-3 text-start" type="button" data-bs-toggle="dropdown"
+                            id="btnTipos"><span class="ms-2">Importados Femininos</span></button>
+                        <ul class="dropdown-menu">
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Loewe Solo Origami</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Mercedes-Benz - Select</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Guerlain Homme - Vintage</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Parfums de Marly - Haltane</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Maison Margiela - Replica</a>
+                            </li>
+                        </ul>
+                        <button class="dropdown-toggle mb-3 text-start" type="button" data-bs-toggle="dropdown"
+                            id="btnTipos"><span class="ms-2">Qualquer</span></button>
+                        <ul class="dropdown-menu">
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Loewe Solo Origami</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Mercedes-Benz - Select</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Guerlain Homme - Vintage</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Parfums de Marly - Haltane</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Maison Margiela - Replica</a>
+                            </li>
+                        </ul>
+                        <button class="dropdown-toggle mb-3 text-start" type="button" data-bs-toggle="dropdown"
+                            id="btnTipos"><span class="ms-2">Qualquer</span></button>
+                        <ul class="dropdown-menu">
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Loewe Solo Origami</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Mercedes-Benz - Select</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Guerlain Homme - Vintage</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Parfums de Marly - Haltane</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Maison Margiela - Replica</a>
+                            </li>
+                        </ul>
+                        <button class="dropdown-toggle mb-3 text-start" type="button" data-bs-toggle="dropdown"
+                            id="btnTipos"><span class="ms-2">Qualquer</span></button>
+                        <ul class="dropdown-menu">
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Loewe Solo Origami</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Mercedes-Benz - Select</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Guerlain Homme - Vintage</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Parfums de Marly - Haltane</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Maison Margiela - Replica</a>
+                            </li>
+                        </ul>
+                        <button class="dropdown-toggle mb-3 text-start" type="button" data-bs-toggle="dropdown"
+                            id="btnTipos"><span class="ms-2">Qualquer</span></button>
+                        <ul class="dropdown-menu">
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Loewe Solo Origami</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Mercedes-Benz - Select</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Guerlain Homme - Vintage</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Parfums de Marly - Haltane</a>
+                            </li>
+                            <hr>
+                            <li class="my-2">
+                                <a href="#" class="dropdown-item">Maison Margiela - Replica</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="mb-0">
+                <footer class="mx-auto">
+                    <div class="rodape-canvas text-center">
+                        <img src="./images/logo-perfumolatra.png" alt="perfumolatra" class="mt-2">
+                    </div>
+                    <div class="social mb-3">
+                        <span class="me-5"><a href="https://www.instagram.com/operfumolatra/" target="blank"><i
+                                    class="bi bi-instagram"></i></a></span>
+                        <span class="me-5"><a href="https://www.youtube.com/@operfumolatra" target="blank"><i
+                                    class="bi bi-youtube text-danger"></i></a></span>
+                        <span><a href="#" target="blank"><i class="bi bi-whatsapp text-success"></i></a></span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <div id="carouselMain" class="carousel slide mt-2 mb-3" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1" class="active"></button>
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2" class="active"></button>
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="3" class="active"></button>
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="4" class="active"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./images/slide01.webp">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/slide02.webp">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/slide03.avif">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/slide04.jpg">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/slide05.jpg">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev"
+                id="carousel-control-area">
+                <span class="button-control-slide"><i class="bi bi-caret-left"></i></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next"
+                id="carousel-control-area">
+                <span class="button-control-slide"><i class="bi bi-caret-right"></i></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <div class="container">
+            <div class="cards mt-5">
+                <div class="text-center text-white">
+                    <h4 class="titulo-sessao-cards">Explore
+                        <hr>
+                    </h4>
+                </div>
+                <div class="row text-white">
+                    <div class="col-12">
+                        <div class="card1">
+                            <a href="#"><img src="./images/imagem-card.webp" class="img-thumbnail"></a>
+                            <h3 class="my-3"><a href="#">Coluna</a></h3>
+                            <p>Um legado permeado de criatividade, bom gosto e sucesso eminente.</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card2">
+                            <a href="#"><img src="./images/imagem-card2.avif" class="img-thumbnail"></a>
+                            <h3 class="my-3"><a href="#">Novas fragâncias</a></h3>
+                            <p>A nova fragância é descrita como uma "fragância altamente fresca e intensamente sensual
+                                para uma amplificada".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <hr class="text-white">
+
+    <footer class="bg-dark footer_all">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12 col-md-4 text-center text-white">
+                    &copy; 2023<br>O Perfumólatra
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a href="#" class="text-decoration-none text-white">
+                        Política de Privacidade
+                    </a><br>
+                    <a href="#" class="text-decoration-none text-white">
+                        Quem Somos
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a href="#" class="text-decoration-none text-white">
+                        Contato
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
